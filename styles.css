@@ -72,6 +72,10 @@ aside {
     }
 }
 
+.odieLink {
+    color:#ff9116;
+}
+
 .sticker {
     position: relative;
 }
@@ -89,6 +93,12 @@ aside {
     width: 80px;
     height: auto;
     display: block;
+
+    filter: 
+    drop-shadow(2px 0 0 #ff9116) 
+    drop-shadow(-2px 0 0 #ff9116) 
+    drop-shadow(0 2px 0 #ff9116) 
+    drop-shadow(0 -2px 0 #ff9116);
 }
 
 .btm {
