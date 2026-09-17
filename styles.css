@@ -1,0 +1,173 @@
+:root {
+    --body-bg-image: url("assets/background/ebpinwheel.gif");
+
+    --content: #43256e;
+}
+
+@font-face {
+    font-family: "Escargot";
+    src: url('assets/fonts/un_escargot_qui_saute/Un Escargot qui Saute.ttf');
+    font-style: normal;
+}
+
+body {
+    .estonia-regular {
+        font-family: "Estonia", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+    line-height: 1.5;
+    margin: 0;
+    background-color: #08031a;
+    background-size: 65px;
+    color: #000000;
+    background-image: var(--body-bg-image);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+#container {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+#container a {
+    color: #1a29ff;
+    font-weight: bold;
+}
+
+#flex {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.horizontal {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal li {
+    display: flex;
+    align-items: center;
+}
+
+aside {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 4px 4px rgba(0, 0, 0, 1);
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+    
+    .dings {
+        font-family:"Escargot";
+        text-align: center
+    }
+}
+
+.sticker {
+    position: relative;
+}
+
+.floating-btn {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    transform: scale(1) rotate(0deg);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.floating-btn img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+.btm {
+    bottom: -95px;
+    right: 15px;
+    top: auto;
+    left: auto;
+}
+
+.floating-btn.hovered {
+    transform: scale(1.2) rotate(8deg);
+}
+
+.floating-btn.clicked {
+    transform: scale(0.9) rotate(-3deg);
+}
+
+
+main {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 4px 4px rgba(0, 0, 0, 1);
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+*/ #leftSidebar {
+    order: 1;
+}
+
+h1,
+h2,
+h3 {
+    color: #000000;
+}
+
+.big-txt {
+    font-size: 2rem;
+    line-height: 0.5;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+strong {
+    color: #000000;
+}
+
+.img {
+    
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.box {
+    width: 100%;
+    max-width: 200px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    #leftSidebar {
+        order: 2;
+    }
+
+}
